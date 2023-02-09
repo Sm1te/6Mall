@@ -15,5 +15,8 @@
         <module>sixmall-order</module>
         <module>sixmall-product</module>
         <module>sixmall-ware</module>
+        <module>renren-fast</module>
+        <module>renren-generator</module>
+        <module>sixmall-common</module>
     </modules>
 </project>
