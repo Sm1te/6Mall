@@ -19,5 +19,6 @@
         <module>renren-generator</module>
         <module>sixmall-common</module>
         <module>renren-fast</module>
+        <module>sixmall-gateway</module>
     </modules>
 </project>
