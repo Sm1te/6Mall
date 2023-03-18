@@ -2,24 +2,26 @@ package com.robin.common.valid;
 
 import javax.validation.Constraint;
 import javax.validation.Payload;
-import java.lang.annotation.Documented;
-import java.lang.annotation.Retention;
-import java.lang.annotation.Target;
+import java.lang.annotation.*;
 
-import static java.lang.annotation.ElementType.*;
-import static java.lang.annotation.ElementType.TYPE_USE;
-import static java.lang.annotation.RetentionPolicy.RUNTIME;
-
+/**
+ * @author liuzemin
+ * @date 2020/12/28 13:47
+ * @description
+ */
 @Documented
-@Constraint(validatedBy = { ListValueConstraintValidator.class })
-@Target({ METHOD, FIELD, ANNOTATION_TYPE, CONSTRUCTOR, PARAMETER, TYPE_USE })
-@Retention(RUNTIME)
+@Constraint(
+        validatedBy = {ListValueConstraintValidator.class}
+)
+@Target({ElementType.METHOD, ElementType.FIELD, ElementType.ANNOTATION_TYPE, ElementType.CONSTRUCTOR, ElementType.PARAMETER, ElementType.TYPE_USE})
+@Retention(RetentionPolicy.RUNTIME)
 public @interface ListValue {
     String message() default "{com.atguigu.common.valid.ListValue.message}";
 
-    Class<?>[] groups() default { };
+    Class<?>[] groups() default {};
 
-    Class<? extends Payload>[] payload() default { };
+    Class<? extends Payload>[] payload() default {};
 
-    int[] vals() default { };
+    int[] values() default {};
 }
+

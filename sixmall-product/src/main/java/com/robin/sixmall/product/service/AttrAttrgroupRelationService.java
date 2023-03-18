@@ -11,7 +11,7 @@ import java.util.Map;
  *
  * @author robin
  * @email liyijiannice@outlook.com
- * @date 2023-02-08 22:27:53
+ * @date 2023-02-08 21:59:45
  */
 public interface AttrAttrgroupRelationService extends IService<AttrAttrgroupRelationEntity> {
 

@@ -5,6 +5,11 @@ import lombok.Data;
 import java.math.BigDecimal;
 import java.util.List;
 
+/**
+ * @author liuzemin
+ * @date 2021/1/5 13:37
+ * @description
+ */
 @Data
 public class SkuReductionTo {
 
